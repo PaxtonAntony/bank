@@ -1,0 +1,13 @@
+<H2 style="color:white;">{{data}}</H2>
+<div class="container w-50 border text-center bg-secondary border-white p-5 mt-5">
+    <h1>Sign in to your bank accout</h1>
+    <div class="p-3 mt-2">
+    <input type="text" (change)="acnoChange ($event)" [placeholder]="input" class="form-control">
+</div>
+<div class="p-3 mt-2">
+    <input type="text" placeholder="password" class="form-control" (change)="pwrdChange ($event) ">
+    <div class="p-3 mt-3 text-center">
+    <button type="button" (click)="login()" class="btn btn-primary"> login</button>
+</div>
+</div>
+</div>
