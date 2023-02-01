@@ -2,12 +2,15 @@
 <div class="container w-50 border text-center bg-secondary border-white p-5 mt-5">
     <h1>Sign in to your bank accout</h1>
     <div class="p-3 mt-2">
-    <input type="text" #acno  [placeholder]="input" class="form-control">
+    <input type="text" [(ngModel)]="acno" id="username"  [placeholder]="input" class="form-control">
 </div>
 <div class="p-3 mt-2">
-    <input type="text" #psw placeholder="password" class="form-control">
+    <input type="text"  id="password" [(ngModel)]="psw" placeholder="password" class="form-control">
     <div class="p-3 mt-3 text-center">
-    <button type="button" (click)="login(acno,psw)" class="btn btn-primary"> login</button>
+    <button type="button" (click)="login()" class="btn btn-primary"> login</button>
+</div>
+<div>Not Registered?
+    <a  routerLink="register">Register </a>
 </div>
 </div>
 </div>
